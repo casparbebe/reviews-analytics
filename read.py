@@ -23,3 +23,18 @@ for d in data:
 print('一共有', len(new), '筆留言長度小於100個字')
 print(new[0])
 print(new[1])
+
+good = []
+for g in data:
+	if 'good' in g:
+		good.append(g) # 27~30行進階寫法 = good[g for g in data if 'good' in g]
+print('一共有', len(good), '筆留言裡面有good')
+print(good[0])
+print(good[1])
+
+# 進階寫法 list
+# good = [1 for d in data if 'good' in d]
+# print(good)
+
+# bad = ['bad' in d for d in data]
+# print(bad)
