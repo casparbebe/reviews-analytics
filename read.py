@@ -14,3 +14,12 @@ length = 0
 for comment in data:
 	length += len(comment)
 print('留言平均長度為', int(length / 1000000), '個字')
+
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆留言長度小於100個字')
+print(new[0])
+print(new[1])
